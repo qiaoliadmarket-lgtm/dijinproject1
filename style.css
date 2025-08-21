@@ -283,7 +283,6 @@ h4.section-title {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column; /* 直式排列 */
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -308,10 +307,10 @@ h4.section-title {
   h2.section-title,
   h3.section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: #222;
+    color: #3D6349;
   }
   .section-subtitle {
     text-align: center;
@@ -395,3 +394,4 @@ h4.section-title {
     margin-bottom: 1rem;
   }
 }
+
