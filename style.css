@@ -278,29 +278,27 @@ h4.section-title {
   }
   .hero-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: border-box;
-    color: white;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;        /* 限制文字區塊寬度 */
     text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
+
   .hero-text h1 {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-size: 2.2rem;
-    letter-spacing: 6px;
+    writing-mode: vertical-rl;       /* 保持直式排列 */
+    text-orientation: upright;       /* 保持直立字型 */
+    font-size: 2.5rem;                 /* 手機適合大小 */
+    line-height: 1.2;                /* 行距緊湊 */
+    letter-spacing: 8px;             /* 適度字距 */
     margin: 0 auto;
-    line-height: 1.3;
-    font-weight: 700;
-    color: #fff;
+    word-break: break-word;          /* 允許自動換行，避免超出 */
+    overflow-wrap: break-word;       /* 防止跑版 */
+    max-height: 80vh;                /* 限制最大高度 */
   }
+
   .hero-text p {
     display: none; /* 手機版隱藏副標 */
   }
@@ -425,3 +423,4 @@ h4.section-title {
   font-weight: bold;
   cursor: pointer;
 }
+
