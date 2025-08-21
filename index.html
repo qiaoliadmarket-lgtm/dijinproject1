@@ -135,11 +135,11 @@
 <h2 class="section-title">基地空拍圖</h2>
 <div class="gallery-grid">
 <div class="gallery-item">
-<img alt="交通圖" src="img/好修苑基地空拍地圖.png"/>
+<img alt="交通圖" src="img/好修苑基地空拍地圖.png"onclick="openModal(this)">
 </div>
 <h2 class="section-title">交通位置圖</h2>
 <div class="gallery-item">
-<img alt="交通圖" src="img/埔鹽地圖.png"/>
+<img alt="交通圖" src="img/埔鹽地圖.png"onclick="openModal(this)">
 </div>
 </div>
 </section>
@@ -295,8 +295,25 @@
     slideItems.forEach(item => item.classList.add('in'));
   }
 
-})();</script></body>
+})();</script>
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+	<script>
+function openModal(img) {
+  var modal = document.getElementById("imgModal");
+  var modalImg = document.getElementById("modalImg");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script></body>
 </html>
+
 
 
 
