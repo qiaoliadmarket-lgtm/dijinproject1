@@ -308,7 +308,7 @@ h4.section-title {
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: #222;
+    color: #3D6349;
   }
   .section-subtitle {
     text-align: center;
@@ -436,3 +436,4 @@ h4.section-title {
     cursor: pointer;
   }
 }
+
