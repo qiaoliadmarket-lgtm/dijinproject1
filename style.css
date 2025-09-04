@@ -394,7 +394,7 @@ h4.section-title {
 }
 
 .modal {
-  display: none;
+  /*display: none;*/
   position: fixed;
   z-index: 1000;
   left: 0; top: 0;
@@ -419,3 +419,4 @@ h4.section-title {
   cursor: pointer;
 }
 .close:hover { color: #bbb; }
+
